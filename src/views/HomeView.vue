@@ -4,7 +4,7 @@
 
 
     const store = useProjectStore();
-    const msg = ref("Welcome to my Pinia Store");
+    const msg = ref("Подтягиваем раздел");
 
 
     const getProjects = computed(() => {
@@ -24,7 +24,7 @@
     <div>
       {{ msg }}
     </div>
-
+    <!-- {{ getProjects }} -->
     <div v-for="project in getProjects" :key="project.id">
       {{ project.id }}  - {{ project.slug }}
     </div>
